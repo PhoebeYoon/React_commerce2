@@ -47,5 +47,5 @@ export default App;
 
 ```
 3. 결과화면을 확인하세요
-<img width="270" alt="스크린샷 2023-04-17 오후 10 35 06" src="https://user-images.githubusercontent.com/48478079/232500336-8a016479-b88a-475a-854c-5f58f947aa6c.png">
+<img width="220" alt="스크린샷 2023-04-17 오후 10 35 06" src="https://user-images.githubusercontent.com/48478079/232500336-8a016479-b88a-475a-854c-5f58f947aa6c.png">
 
