@@ -43,4 +43,41 @@ function Navbar() {
   )
 }
 export default Navbar
-```
+```    
+3. https://unsplash.com/ko 에서 피자이미지를 다운로드하여 assets 폴더에 삽입합니다. 
+4. [ Navbar.js]
+```js
+import React from 'react'
+import Logo from '../assets/pizzaLogo.jpg'
+
+function Navbar() {
+  return (
+    <div className='navbar'>
+      <div className="leftSide">
+        <img src={Logo} />
+      </div>
+      <div className="rightSide"></div>
+    </div>
+  )
+}
+export default Navbar
+```    
+
+[App.js]
+```js
+import Navbar from './components/Navbar'
+
+function App() {
+  return (
+    <div className="App">
+     <Navbar />
+    </div>
+  );
+}
+
+export default App;
+```   
+5. http://localhost:3000/ 에서 결과화면을 확인하세요.   
+
+<img width="442" alt="스크린샷 2023-04-17 오후 9 51 58" src="https://user-images.githubusercontent.com/48478079/232489526-19176129-57a1-4f1a-aecd-4772f40ef1be.png">
+
