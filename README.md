@@ -26,4 +26,21 @@ import ./index.css;
 ``` 
 삭제합니다.   
 
+2. components 폴더를 생성하고 파일을 생성합니다.  
+vscode의 확장프로그램에서 'ES7 React/Redux/React-Native/JS snippets' 설치합니다   
+📁components 📁Navbar.js  
+```js
+rfce 탭키 --> 해당 코드가 생성됩니다 
+import React from 'react'
 
+function Navbar() {
+  return (
+    <div className='navbar'>
+      <div className="leftSide">
+      </div>
+      <div className="rightSide"></div>
+    </div>
+  )
+}
+export default Navbar
+```
