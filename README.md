@@ -55,5 +55,5 @@ export default App;
 
 ```
 
-<img width="400" alt="스크린샷 2023-04-25 오후 9 27 43" src="https://user-images.githubusercontent.com/48478079/234275966-eb79179b-812a-4c97-b1bc-57c4e2cf896c.png">
+<img width="350" alt="스크린샷 2023-04-25 오후 9 27 43" src="https://user-images.githubusercontent.com/48478079/234275966-eb79179b-812a-4c97-b1bc-57c4e2cf896c.png">
 
