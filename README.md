@@ -81,8 +81,10 @@ import Vegan from "../assets/vegan.jpg";
 import Pineapple from "../assets/pineapple.jpg";
 import Expensive from "../assets/expensive.jpg"; 
 중략
-```
+```  
 
+
+3. 
 [App.js] 에 다음의 내용을 추가합니다.
 ```js
 import Menu from './pages/Menu'
@@ -110,11 +112,91 @@ function Menu() {
 export default Menu
 
 ```
+'메뉴'를 클릭했을때 아래와 같이 나오는지 확인합니다.  
 
 
+<img width="410" alt="스크린샷 2023-04-25 오후 8 34 40" src="https://user-images.githubusercontent.com/48478079/234264513-09421e1e-8ea6-46c7-8f8d-2dd539b1d0cc.png">   
+
+불러온 MenuList.js 안에는 많은 항목이 있기때문에 { MenuList } 이렇게적는다고 내용을 나열하지는 않습니다. 이미 자바스크립트에서 학습이 된 내용일것입니다.  그래서 내용을 나열하기 위해 map()함수를 사용해야 합니다.   
+아래와 같이 내용을 변경합니다.  
+
+```js
+<div className='menuList'>
+        {MenuList.map((item, key)=>{
+          return <div> {item.name}</div>
+        })}
+      </div>
+```
+실행결과를 확인하면 아래와 같이 나옵니다. 이름만 적었기 때문에 이름만 나옵니다. 
+
+<img width="300" alt="스크린샷 2023-04-25 오후 8 40 27" src="https://user-images.githubusercontent.com/48478079/234265594-48750ba3-3047-4e14-9926-227e93ac234e.png">
+
+4. 
+내용이 출력되는 것이 확인되었으니 이것에 형식을 입히도록 하겠습니다. 이를 위해 
+📁components 안에 MenuItem.js 파일을 생성합니다.  
+
+[ MenuItem.js ]
+```js
+import React from 'react'
+
+function MenuItem({image,name,price}) {
+  return (
+    <div className='menuItem'>
+        <div style={{backgroundImage :`url( ${image})`}}></div>
+        <h1>{name}</h1>
+        <p>₩{price}</p>
+    </div>
+  )
+}
+
+export default MenuItem
+
+```   
+여기에 들어갈 내용은 MenuList.js가 가지고 있습니다.  
+[ Menu.js]의 내용을 변경합니다.  
+
+```js
+import React from 'react'
+import { MenuList} from '../sub/MenuList'
+import MenuItem  from '../components/MenuItem'
+
+function Menu() {
+  return (
+    <div className='menu'>
+      <h1 className="menutitle">Our Menu</h1>
+      <div className='menuList'>
+        {MenuList.map((menuitem, key)=>{
+          return <MenuItem />
+        })}
+      </div>
+    </div>
+  )
+}
+export default Menu
+```  
 
 
+이것의 결과를 개발자도구에서 확인해보면 내용은 비어있지만 코드는 모두 들어가 있습니다.   
+<img width="500" alt="스크린샷 2023-04-25 오후 8 59 06" src="https://user-images.githubusercontent.com/48478079/234269617-c1e24315-5f4b-4763-ac88-f8f664b0132b.png">
 
+4. 
+이제 비어있는 태그에 내용만 넣어주면 됩니다. 형식을 갖고 있는 MenuItem.js은     
+function MenuItem({image, naem, price}) 와 같이 3개의 인자를 필요로 합니다. 
+전달될 내용은 MenuList.js가 가지고 있고 이 두개의 파일은 Menu.js안에 모두 삽입되어 있습니다.  
 
+[Menu.js]를 아래와 같이 변경합니다     
+
+```js
+import '../styles/Menu.css'
+
+<div className='menuList'>
+        {MenuList.map((menuitem, key)=>{
+          return <MenuItem image={menuitem.image} name={menuitem.name} price={menuitem.price}/>
+        })}
+</div>
+
+```   
+
+<img width="400" alt="스크린샷 2023-04-25 오후 9 12 46" src="https://user-images.githubusercontent.com/48478079/234272718-92fc4e0d-842b-4c1b-859d-86d59b3a69c1.png">
 
 
