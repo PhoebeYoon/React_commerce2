@@ -83,6 +83,37 @@ import Expensive from "../assets/expensive.jpg";
 중략
 ```
 
+[App.js] 에 다음의 내용을 추가합니다.
+```js
+import Menu from './pages/Menu'
+
+<Route  path="/menu" element={<Menu />} />
+```
+
+[Menu.js]
+```js
+import React from 'react'
+import { MenuList} from '../sub/MenuList.js'
+
+function Menu() {
+  return (
+    <div className='menu'>
+      <h1 className="menutitle">
+        Our Menu
+      </h1>
+      <div className='menuList'>
+      </div>
+    </div>
+  )
+}
+
+export default Menu
+
+```
+
+
+
+
 
 
 
