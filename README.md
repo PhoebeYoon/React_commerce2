@@ -6,13 +6,16 @@
 
 ```js
 import React from 'react'
-import MultiplePizzas from '../assets/multiplePizzas.jpeg' 
+import MultiplePizzas from "../assets/pizza10.jpg";
+import '../styles/About.css'
+
 function About() {
   return (
     <div className='about'>
       <div className='aboutTop' style={{ backgroundImage:`url( ${MultiplePizzas})`}}></div>
       <div className="aboutBottom">
-      Lorem ipsum 
+       <h1>About us</h1>
+        <p>Lorem ipsum  </p>
       </div>
     </div>
   )
