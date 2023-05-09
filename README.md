@@ -15,7 +15,11 @@ function Footer() {
 }
 export default Footer
 ```  
-[ App.js ]의 내용을 아래와 같이 변경합니다. 
+[ App.js ]의 내용을 아래와 같이 변경합니다.   
+위의 import 문에서 BrowserRouter as Router라고 되어 있다면 as Router를 삭제 후 BrowserRouter 로 삽입해 봅니다.
+
+
+
 ```js
 중략
 <div className="App">
