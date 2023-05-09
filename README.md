@@ -1,5 +1,6 @@
-##### :cactus: React_Tutorial_Part3
+##### :cactus: React_Tutorial_Part3   
 
+###### 💔 해당 게시물을 무단으로 도용하지 마세요   
 
 1. 
 [Navbar.js] 의 내용 중 아래처럼 내용을 변경합니다. hiddenLinks에는 이전에 삽입했던 아이콘을 클릭했을때 메뉴가 보이도록 변경할 것입니다.
