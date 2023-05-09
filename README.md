@@ -123,7 +123,7 @@ export default Menu
 ```js
 <div className='menuList'>
         {MenuList.map((item, key)=>{
-          return <div> {item.name}</div>
+          return ( <div> {item.name}</div> )
         })}
       </div>
 ```
