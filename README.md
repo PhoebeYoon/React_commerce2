@@ -42,7 +42,7 @@ import '../styles/Navbar.css'
 
 3. 
 Before-start 브랜치에 소개되어 있는 사이트, https://mui.com/material-ui/material-icons/ 에 접속해서 왼쪽메뉴 중 'Getting started' > 'Installation' 를 따라 설치합니다.  아이콘부분을 찾아 설치합니다.   
-``` npm install @mui/icons-material  ```
+``` npm install @mui/material @emotion/react @emotion/styled  ```
 
 <img width="500" alt="스크린샷 2023-04-25 오후 6 14 26" src="https://user-images.githubusercontent.com/48478079/234231735-8cf3a0ee-b978-48d9-8723-f791a61cdadc.png">   
 
