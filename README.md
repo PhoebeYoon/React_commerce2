@@ -9,7 +9,7 @@ https://mui.com/material-ui/material-icons/
 ### 설치방법 :   
 ```  
 >sudo npm install @mui/material @emotion/react @emotion/styled   or 
->npm install @mui/material @emotion/react @emotion/styled
+>npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
 
 Navbar.js 에  
