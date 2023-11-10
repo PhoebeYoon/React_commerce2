@@ -8,7 +8,8 @@ https://mui.com/material-ui/material-icons/
 
 ### 설치방법 :   
 ```  
->sudo npm install @mui/material @emotion/react @emotion/styled   or 
+>sudo npm install @mui/material @emotion/react @emotion/styled
+ or 
 >npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
 
