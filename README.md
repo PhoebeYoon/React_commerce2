@@ -27,7 +27,7 @@ import ./index.css;
 ``` 
 삭제합니다.   
 
-2. components 폴더를 생성하고 파일을 생성합니다.  
+2. 📁src📁components 폴더를 생성하고 파일을 생성합니다.  
 vscode의 확장프로그램에서 'ES7 React/Redux/React-Native/JS snippets' 설치합니다   
 📁components 📁Navbar.js  
 ```js
@@ -44,7 +44,7 @@ function Navbar() {
 }
 export default Navbar
 ```    
-3. https://unsplash.com/ko 에서 피자이미지를 다운로드하여 assets 폴더에 삽입합니다. 
+3. https://unsplash.com/ko 에서 피자이미지를 다운로드하여 📁src📁assets 폴더에 삽입합니다. 
 4. [ Navbar.js]
 ```js
 import React from 'react'
