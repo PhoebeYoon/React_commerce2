@@ -54,7 +54,7 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className="leftSide">
-        <img src={Logo} />
+        <img src={Logo} />  <-- "{ }" 아니다 
       </div>
       <div className="rightSide"></div>
     </div>
