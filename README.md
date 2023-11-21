@@ -49,7 +49,7 @@ const toggleNavbar =()=>{
   }
 ...
 
-<button onClick={setOpenLinks}>
+<button onClick={toggleNavbar}>  <-- 여기에 onClick={ setOpenLinks(!openLinks) } 대신
      <MenuIcon />
 </button>
 ```   
