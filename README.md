@@ -1,4 +1,4 @@
-##### :cactus: React_Tutorial_Part3
+##### :cactus: React_commerce2_Tutorial_Part3
 
 
 ## React로 만드는 웹사이트
